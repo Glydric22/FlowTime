@@ -2,14 +2,13 @@
 //  flowtimeTests.swift
 //  flowtimeTests
 //
-//  Created by Leonardo Migliorelli on 31/10/22.
-//
+//  Created by Leonardo Migliorelli on 04/11/22.
 //
 
 import XCTest
-import Fundation
-
-final class flowtimeTests: XCTestCase {
+@testable import FlowTime
+//TODO import not working
+final class FlowTimeTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,14 +18,17 @@ final class flowtimeTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func AlarmTest() throws {
-        alarm = Alarm(100)
-        assert(condition: alarm.seconds == 100, message: "Alarm not correctly initialized with 100 seconds")
-
+    func soundAlarmTest() throws {
+        let alarm = SoundAlarm(10)
+        alarm.play()
+    }
+    func alarmTest() throws {
+        let alarm = Alarm(100)
+        assert(alarm.rawSeconds == 100, "Alarm not correctly initialized with 100 seconds")
     }
 
     func stopWatchTest() throws {
-        watch = StopWatch()
+        let stopWatch = StopWatch()
     }
 
     func testPerformanceExample() throws {
@@ -37,3 +39,4 @@ final class flowtimeTests: XCTestCase {
     }
 
 }
+
