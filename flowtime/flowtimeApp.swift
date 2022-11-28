@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct flowtimeApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State var relaxingTime: TimeInterval = 0
     @State var total: TimeInterval = 0
     @State var record: TimeInterval = 0

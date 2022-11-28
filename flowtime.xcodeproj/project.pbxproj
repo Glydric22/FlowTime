@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8581DA9D2935258700B9367F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8581DA9C2935258700B9367F /* AppDelegate.swift */; };
 		858394872915AF7200A30017 /* ConcertOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 858394862915AF7200A30017 /* ConcertOne-Regular.ttf */; };
 		E235A1B8476A59A9D13C4A15 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235A1B123E4A7FFD9C825FD /* Alarm.swift */; };
 		E235A7D9E8896C8B61C871C8 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235A8B08506E858C688372C /* StopWatch.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8581DA9C2935258700B9367F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		858394862915AF7200A30017 /* ConcertOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ConcertOne-Regular.ttf"; sourceTree = "<group>"; };
 		858394882915B07600A30017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = FlowTime/Info.plist; sourceTree = "<group>"; };
 		E235A1B123E4A7FFD9C825FD /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				E235AEB833C07D82F1F0E545 /* Model */,
 				E235AABD6770013BB3CAF3C7 /* View */,
 				E235ABFA607DEF06C5FF2C57 /* Resources */,
+				8581DA9C2935258700B9367F /* AppDelegate.swift */,
 			);
 			path = flowtime;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				E235A8D9C66FD715C8461246 /* flowtimeApp.swift in Sources */,
 				E235A1B8476A59A9D13C4A15 /* Alarm.swift in Sources */,
+				8581DA9D2935258700B9367F /* AppDelegate.swift in Sources */,
 				E235A7D9E8896C8B61C871C8 /* StopWatch.swift in Sources */,
 				E235AC0EE1166D77B991713F /* TimeIntervalExtension.swift in Sources */,
 				E235AB932BAADD6E85CE2220 /* MainView.swift in Sources */,
@@ -219,6 +223,7 @@
 				INFOPLIST_FILE = FlowTime/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FlowTime;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -233,7 +238,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.3;
+				MARKETING_VERSION = 0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.miglio.flowtime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -263,6 +268,7 @@
 				INFOPLIST_FILE = FlowTime/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FlowTime;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -277,7 +283,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.3;
+				MARKETING_VERSION = 0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.miglio.flowtime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
